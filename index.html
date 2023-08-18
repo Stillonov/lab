@@ -179,6 +179,11 @@
         track: {
           google_analytics: false,
         },
+        new_experiments: {
+          mode: "async",
+          timeout: 1000,
+          hide_class: "exponea-hide",
+        },
       });
       exponea.start();
     </script>
@@ -186,5 +191,7 @@
   <body>
     <h1>Hello, World!</h1>
     <p>How are you?</p>
+
+    <div class="exponea-hide">Hide me!</div>
   </body>
 </html>
